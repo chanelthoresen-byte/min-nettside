@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+header {
+    background: #111;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #E0BFB8, #A95C68);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero span {
+    color: #ffffff;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ffffff;
+    color: #111;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.about, .projects, .contact {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.project-grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsiv navigasjon */
+@media(max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
